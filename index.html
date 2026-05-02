@@ -3,332 +3,217 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Importaciones Puma — Juguetes & Libros Educativos 2025–2026</title>
-  <meta name="description" content="Importaciones Puma — Combos de juguetes y libros educativos para niños. Envíos a todo Ecuador.">
+  <title>Importaciones Puma — Juguetes & Libros Educativos</title>
+  <meta name="description" content="Combos de juguetes y libros de inglés para niños. Envíos a todo Ecuador.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg:       #0d0d0d;
-      --surface:  #161616;
-      --surface2: #1e1e1e;
-      --border:   rgba(255,255,255,0.07);
-      --border2:  rgba(255,255,255,0.13);
-      --text:     #f0ede8;
-      --muted:    #888580;
-      --accent:   #ff5c35;
-      --green:    #2ecc71;
-      --gold:     #f5c842;
-      --r:        16px;
-      --r-lg:     24px;
-      --r-xl:     32px;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Manrope', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    body::before {
-      content: '';
-      position: fixed; inset: 0; z-index: 0; pointer-events: none;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-      background-size: 200px;
-      opacity: 0.5;
-    }
-
-    a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
-
-    .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 1.75rem; }
+    :root{--bg:#fffdf8;--bg2:#fff7f0;--surface:#fff;--border:#f0e8dc;--border2:#e0d4c4;--text:#1a1207;--muted:#7a6a55;--accent:#ff4d6d;--blue:#3d9cf5;--green:#22c55e;--yellow:#fbbf24;--purple:#a855f7;--pink:#f472b6;--orange:#f97316;--shadow:0 4px 24px rgba(0,0,0,.08);--shadow-lg:0 12px 48px rgba(0,0,0,.12)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:100%;max-width:1180px;margin:0 auto;padding:0 1.25rem}
 
     /* HEADER */
-    header {
-      position: sticky; top: 0; z-index: 100;
-      background: rgba(13,13,13,0.9);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-    }
+    header{position:sticky;top:0;z-index:100;background:rgba(255,253,248,.96);backdrop-filter:blur(16px);border-bottom:2px solid var(--border);box-shadow:0 2px 16px rgba(0,0,0,.06)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0;gap:1rem}
+    .logo{display:flex;align-items:center;gap:.65rem;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:1.05rem;color:var(--text);white-space:nowrap}
+    .logo-icon{width:40px;height:40px;background:linear-gradient(135deg,#ff4d6d,#ff8c69);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;box-shadow:0 4px 14px rgba(255,77,109,.35);flex-shrink:0}
+    .logo-sub{display:block;font-family:'Nunito',sans-serif;font-weight:600;font-size:.62rem;color:var(--muted);margin-top:-3px}
+    .nav-links{display:flex;gap:.15rem;font-size:.82rem;color:var(--muted);font-weight:700}
+    .nav-links a{padding:.4rem .8rem;border-radius:999px;transition:background .18s,color .18s;white-space:nowrap}
+    .nav-links a:hover{background:var(--bg2);color:var(--text)}
+    .btn-wa-nav{display:inline-flex;align-items:center;gap:.45rem;padding:.6rem 1.1rem;border-radius:12px;background:linear-gradient(135deg,#25d366,#16a34a);color:#fff;font-weight:800;font-size:.82rem;white-space:nowrap;box-shadow:0 4px 18px rgba(37,211,102,.35);transition:transform .15s,box-shadow .15s;flex-shrink:0}
+    .btn-wa-nav:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(37,211,102,.5)}
 
-    .nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; gap: 1.5rem; }
-
-    .logo { display: flex; align-items: center; gap: 0.75rem; font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1rem; letter-spacing: 0.02em; white-space: nowrap; }
-
-    .logo-icon { width: 36px; height: 36px; background: var(--accent); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; box-shadow: 0 0 20px rgba(255,92,53,0.4); flex-shrink: 0; }
-
-    .logo-sub { display: block; font-family: 'Manrope', sans-serif; font-weight: 400; font-size: 0.68rem; color: var(--muted); margin-top: -2px; }
-
-    .nav-links { display: flex; gap: 0.2rem; font-size: 0.82rem; color: var(--muted); }
-    .nav-links a { padding: 0.42rem 0.9rem; border-radius: 999px; transition: background .18s, color .18s; white-space: nowrap; }
-    .nav-links a:hover { background: var(--surface2); color: var(--text); }
-
-    .btn-wa { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.62rem 1.25rem; border-radius: 14px; background: linear-gradient(135deg, #25d366, #128c4a); color: #fff; font-weight: 800; font-size: 0.85rem; white-space: nowrap; transition: transform .15s, box-shadow .15s; box-shadow: 0 6px 24px rgba(37,211,102,0.45); flex-shrink: 0; letter-spacing: 0.01em; position: relative; overflow: hidden; }
-    .btn-wa::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent); pointer-events: none; }
-    .btn-wa:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 12px 32px rgba(37,211,102,0.6); }
-    .btn-wa .wa-label { display: flex; flex-direction: column; line-height: 1.15; text-align: left; }
-    .btn-wa .wa-label small { font-size: 0.62rem; font-weight: 500; opacity: 0.75; }
-    @media(max-width:640px) {
-      .btn-wa { padding: 0.7rem 1rem; border-radius: 12px; font-size: 0.82rem; }
-    }
-
-    /* ── TICKER STRIP ────────────────────────────── */
-    .ticker-strip {
-      background: linear-gradient(90deg, #0a1f12, #0d2b18, #0a1f12);
-      border-bottom: 1px solid rgba(46,204,113,0.2);
-      overflow: hidden;
-      white-space: nowrap;
-      padding: 0.55rem 0;
-      position: relative;
-      z-index: 99;
-    }
-    .ticker-strip::before, .ticker-strip::after {
-      content: ''; position: absolute; top: 0; bottom: 0; width: 60px; z-index: 2; pointer-events: none;
-    }
-    .ticker-strip::before { left: 0; background: linear-gradient(90deg, #0a1f12, transparent); }
-    .ticker-strip::after  { right: 0; background: linear-gradient(270deg, #0a1f12, transparent); }
-    .ticker-track {
-      display: inline-flex; gap: 0; animation: tickerScroll 28s linear infinite;
-    }
-    .ticker-track:hover { animation-play-state: paused; }
-    @keyframes tickerScroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
-    .ticker-item {
-      display: inline-flex; align-items: center; gap: 0.55rem;
-      padding: 0 2.5rem;
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: var(--green);
-      letter-spacing: 0.03em;
-    }
-    .ticker-item .ti-dot {
-      width: 6px; height: 6px; border-radius: 50%;
-      background: var(--green);
-      flex-shrink: 0;
-      box-shadow: 0 0 6px rgba(46,204,113,0.8);
-    }
-    .ticker-item .ti-hl { color: #fff; font-weight: 700; }
-    .ticker-sep { color: rgba(46,204,113,0.3); padding: 0 0.5rem; font-size: 1rem; }
-
-    /* ── SOCIAL PROOF TOAST ──────────────────────── */
-    #sp-toast {
-      position: fixed; bottom: 1.5rem; left: 1.5rem; z-index: 999;
-      max-width: 310px; min-width: 260px;
-      background: var(--surface);
-      border: 1px solid var(--border2);
-      border-left: 3px solid var(--green);
-      border-radius: 14px;
-      padding: 0.85rem 1rem;
-      display: flex; align-items: center; gap: 0.75rem;
-      box-shadow: 0 16px 40px rgba(0,0,0,0.5);
-      transform: translateX(-120%);
-      transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), opacity 0.3s;
-      opacity: 0;
-      pointer-events: none;
-    }
-    #sp-toast.show { transform: translateX(0); opacity: 1; pointer-events: auto; }
-    .sp-avatar {
-      width: 38px; height: 38px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent), #ff9370);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1rem; flex-shrink: 0;
-      font-weight: 800; color: #fff;
-    }
-    .sp-body { flex: 1; min-width: 0; }
-    .sp-name { font-weight: 700; font-size: 0.85rem; color: var(--text); }
-    .sp-action { font-size: 0.78rem; color: var(--muted); margin-top: 0.1rem; line-height: 1.4; }
-    .sp-action b { color: var(--green); }
-    .sp-time { font-size: 0.68rem; color: var(--muted); margin-top: 0.2rem; display: flex; align-items: center; gap: 0.3rem; }
-    .sp-time::before { content: '●'; color: var(--green); font-size: 0.5rem; }
-
-    /* CTA WhatsApp buttons — big attractive style */
-    .btn-wacta { display: inline-flex; align-items: center; gap: 0.6rem; padding: 1rem 1.8rem; border-radius: 16px; background: linear-gradient(135deg, #25d366 0%, #128c4a 100%); color: #fff; font-weight: 800; font-size: 1rem; white-space: nowrap; transition: transform .15s, box-shadow .18s; box-shadow: 0 8px 30px rgba(37,211,102,0.45); position: relative; overflow: hidden; font-family: 'Manrope', sans-serif; }
-    .btn-wacta::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.12), transparent); pointer-events: none; }
-    .btn-wacta::after { content: ''; position: absolute; top: -50%; left: -60%; width: 60%; height: 200%; background: rgba(255,255,255,0.08); transform: skewX(-20deg); transition: left .4s ease; }
-    .btn-wacta:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 16px 40px rgba(37,211,102,0.6); }
-    .btn-wacta:hover::after { left: 130%; }
-    .btn-wacta .wa-icon { font-size: 1.25rem; flex-shrink: 0; }
-    .btn-wacta .wa-text { display: flex; flex-direction: column; text-align: left; line-height: 1.2; }
-    .btn-wacta .wa-text small { font-size: 0.7rem; font-weight: 500; opacity: 0.8; }
-
-    /* BUTTONS */
-    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; padding: 0.8rem 1.6rem; border-radius: 999px; font-weight: 700; font-size: 0.9rem; border: none; cursor: pointer; transition: transform .15s, box-shadow .15s; white-space: nowrap; font-family: 'Manrope', sans-serif; }
-
-    .btn-accent { background: var(--accent); color: #fff; box-shadow: 0 8px 28px rgba(255,92,53,0.4); }
-    .btn-accent:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(255,92,53,0.55); }
-
-    .btn-ghost { background: var(--surface2); color: var(--text); border: 1px solid var(--border2); }
-    .btn-ghost:hover { background: var(--surface); border-color: rgba(255,255,255,0.22); }
-
-    .btn-gold { background: var(--gold); color: #1a1000; font-weight: 800; box-shadow: 0 8px 26px rgba(245,200,66,0.4); }
-    .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(245,200,66,0.55); }
-
-    .btn-green { background: var(--green); color: #0a1f12; font-weight: 700; box-shadow: 0 8px 24px rgba(46,204,113,0.35); }
-    .btn-green:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(46,204,113,0.5); }
+    /* TICKER */
+    .ticker-strip{background:linear-gradient(90deg,#ff4d6d,#f97316,#fbbf24,#22c55e,#3d9cf5,#a855f7,#ff4d6d);background-size:300% 100%;animation:gradShift 5s linear infinite;overflow:hidden;white-space:nowrap;padding:.48rem 0}
+    @keyframes gradShift{0%{background-position:0% 50%}100%{background-position:100% 50%}}
+    .ticker-track{display:inline-flex;animation:tickerScroll 22s linear infinite}
+    @keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    .ticker-item{display:inline-flex;align-items:center;gap:.45rem;padding:0 1.8rem;font-size:.76rem;font-weight:800;color:#fff;letter-spacing:.04em}
+    .ticker-sep{color:rgba(255,255,255,.5);padding:0 .4rem}
 
     /* HERO */
-    .hero { position: relative; z-index: 1; padding: 5rem 0 4rem; }
+    .hero{position:relative;padding:3rem 0 2.5rem;background:linear-gradient(135deg,#fff7f0 0%,#fff0f5 50%,#f0f7ff 100%);overflow:hidden}
+    .hero-blob1{position:absolute;width:350px;height:350px;top:-100px;right:-60px;background:radial-gradient(circle,rgba(255,77,109,.12),transparent 70%);border-radius:50%;pointer-events:none}
+    .hero-blob2{position:absolute;width:250px;height:250px;bottom:-60px;left:-40px;background:radial-gradient(circle,rgba(61,156,245,.1),transparent 70%);border-radius:50%;pointer-events:none}
+    .hero-confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+    .confetti-piece{position:absolute;border-radius:2px;animation:confettiFall linear infinite;opacity:.5}
+    @keyframes confettiFall{0%{transform:translateY(-20px) rotate(0deg);opacity:.6}100%{transform:translateY(110vh) rotate(720deg);opacity:0}}
+    .hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center;position:relative;z-index:1}
+    .hero-badge{display:inline-flex;align-items:center;gap:.45rem;padding:.3rem .9rem;border-radius:999px;background:#fff;border:2px solid var(--border2);font-size:.75rem;font-weight:800;color:var(--orange);letter-spacing:.04em;text-transform:uppercase;margin-bottom:1.1rem;box-shadow:var(--shadow)}
+    h1{font-family:'Baloo 2',sans-serif;font-size:clamp(2.1rem,5vw,3.6rem);font-weight:800;line-height:1.08;margin-bottom:1rem;color:var(--text)}
+    h1 .hl-red{color:var(--accent)}
+    h1 .hl-blue{color:var(--blue)}
+    .hero-sub{font-size:.95rem;color:var(--muted);margin-bottom:1.8rem;font-weight:600;line-height:1.75}
+    .hero-cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:1.6rem}
+    .trust-row{display:flex;flex-wrap:wrap;gap:.9rem;font-size:.78rem;color:var(--muted);font-weight:700}
+    .trust-row span{display:flex;align-items:center;gap:.35rem;background:#fff;padding:.3rem .75rem;border-radius:999px;border:2px solid var(--border);box-shadow:var(--shadow)}
+    .hero-card{background:#fff;border:2.5px solid var(--border2);border-radius:24px;padding:1.8rem;box-shadow:var(--shadow-lg);position:relative;animation:floatCard 4s ease-in-out infinite}
+    @keyframes floatCard{0%,100%{transform:translateY(0) rotate(-.5deg)}50%{transform:translateY(-10px) rotate(.5deg)}}
+    .hc-stars{font-size:1.1rem;margin-bottom:.45rem}
+    .hc-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--accent),var(--orange));color:#fff;font-size:.7rem;font-weight:800;padding:.28rem .9rem;border-radius:999px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;box-shadow:0 4px 14px rgba(255,77,109,.4)}
+    .hc-title{font-family:'Baloo 2',sans-serif;font-size:.95rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.2rem}
+    .hc-items{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1.3rem}
+    .hc-item{display:flex;align-items:center;gap:.55rem;padding:.5rem .8rem;background:var(--bg2);border-radius:11px;border:1.5px solid var(--border);font-size:.83rem;font-weight:700}
+    .hc-item .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
 
-    .hero::before { content: ''; position: absolute; width: 600px; height: 600px; top: -180px; right: -120px; background: radial-gradient(circle, rgba(255,92,53,0.12), transparent 70%); border-radius: 50%; pointer-events: none; }
-    .hero::after  { content: ''; position: absolute; width: 400px; height: 400px; bottom: -100px; left: -80px; background: radial-gradient(circle, rgba(46,204,113,0.08), transparent 70%); border-radius: 50%; pointer-events: none; }
-
-    .hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 4rem; align-items: center; position: relative; z-index: 1; }
-
-    .eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.28rem 0.85rem; border-radius: 999px; border: 1px solid var(--border2); background: var(--surface2); font-size: 0.75rem; font-weight: 600; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 1.2rem; }
-    .eyebrow span { color: var(--accent); }
-
-    h1 { font-family: 'Syne', sans-serif; font-size: clamp(2.6rem, 4vw + 1rem, 4.2rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 1.2rem; }
-    h1 em { font-style: normal; color: var(--accent); }
-
-    .hero-sub { font-size: 1rem; color: var(--muted); margin-bottom: 2.2rem; max-width: 28rem; font-weight: 400; line-height: 1.7; }
-
-    .hero-cta { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-bottom: 2rem; }
-
-    .trust-row { display: flex; flex-wrap: wrap; gap: 1.4rem; font-size: 0.78rem; color: var(--muted); }
-    .trust-row span { display: flex; align-items: center; gap: 0.35rem; }
-    .trust-row b { color: var(--text); font-weight: 600; }
-
-    /* HERO CARD */
-    .hero-card { background: var(--surface); border: 1px solid var(--border2); border-radius: var(--r-xl); padding: 2.2rem; position: relative; overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,0.4); animation: floatCard 5s ease-in-out infinite; }
-    @keyframes floatCard { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
-    .hero-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,92,53,0.6), transparent); }
-
-    .hc-badge { position: absolute; top: 20px; right: 20px; background: var(--accent); color: #fff; font-size: 0.7rem; font-weight: 800; padding: 0.3rem 0.75rem; border-radius: 999px; letter-spacing: 0.06em; text-transform: uppercase; box-shadow: 0 4px 14px rgba(255,92,53,0.5); }
-    .hc-label { font-size: 0.72rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.4rem; }
-    .hc-price { font-family: 'Syne', sans-serif; font-size: 3.8rem; font-weight: 800; color: var(--text); line-height: 1; margin-bottom: 0.2rem; }
-    .hc-price-note { font-size: 0.8rem; color: var(--muted); margin-bottom: 1.6rem; }
-
-    .hc-items { display: flex; flex-direction: column; gap: 0.55rem; margin-bottom: 1.8rem; }
-    .hc-item { display: flex; align-items: center; gap: 0.6rem; padding: 0.55rem 0.8rem; background: var(--surface2); border-radius: 10px; border: 1px solid var(--border); font-size: 0.85rem; }
-    .hc-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+    /* BUTTONS */
+    .btn-wa{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.6rem;border-radius:16px;background:linear-gradient(135deg,#25d366,#16a34a);color:#fff;font-weight:800;font-size:.92rem;box-shadow:0 6px 24px rgba(37,211,102,.4);transition:transform .15s,box-shadow .2s;position:relative;overflow:hidden;font-family:'Nunito',sans-serif}
+    .btn-wa::after{content:'';position:absolute;top:-50%;left:-60%;width:50%;height:200%;background:rgba(255,255,255,.15);transform:skewX(-20deg);transition:left .4s}
+    .btn-wa:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 14px 36px rgba(37,211,102,.55)}
+    .btn-wa:hover::after{left:130%}
+    .btn-wa .wa-icon{font-size:1.15rem;flex-shrink:0}
+    .btn-wa .wa-text{display:flex;flex-direction:column;text-align:left;line-height:1.2}
+    .btn-wa .wa-text small{font-size:.66rem;font-weight:600;opacity:.8}
+    .btn-ghost{display:inline-flex;align-items:center;gap:.4rem;padding:.85rem 1.4rem;border-radius:13px;background:#fff;color:var(--text);font-weight:800;font-size:.9rem;border:2.5px solid var(--border2);box-shadow:var(--shadow);transition:transform .15s,border-color .15s;font-family:'Nunito',sans-serif}
+    .btn-ghost:hover{transform:translateY(-2px);border-color:var(--accent);color:var(--accent)}
 
     /* SECTIONS */
-    section { padding: 5rem 0 0; position: relative; z-index: 1; }
+    section{padding:4rem 0 0;position:relative;z-index:1}
+    .sec-eyebrow{display:inline-flex;align-items:center;gap:.4rem;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.26rem .85rem;border-radius:999px;margin-bottom:.65rem}
+    .sec-eyebrow.red{background:rgba(255,77,109,.1);color:var(--accent);border:1.5px solid rgba(255,77,109,.2)}
+    .sec-eyebrow.blue{background:rgba(61,156,245,.1);color:var(--blue);border:1.5px solid rgba(61,156,245,.2)}
+    .sec-eyebrow.green{background:rgba(34,197,94,.1);color:var(--green);border:1.5px solid rgba(34,197,94,.2)}
+    .sec-eyebrow.purple{background:rgba(168,85,247,.1);color:var(--purple);border:1.5px solid rgba(168,85,247,.2)}
+    .sec-eyebrow.orange{background:rgba(249,115,22,.1);color:var(--orange);border:1.5px solid rgba(249,115,22,.2)}
+    .sec-title{font-family:'Baloo 2',sans-serif;font-size:clamp(1.7rem,2.5vw + .5rem,2.5rem);font-weight:800;line-height:1.1;margin-bottom:.45rem;color:var(--text)}
+    .sec-sub{font-size:.92rem;color:var(--muted);margin-bottom:2rem;line-height:1.75;font-weight:600}
 
-    .sec-label { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem; }
-    .sec-label.green { color: var(--green); }
-    .sec-label.gold { color: var(--gold); }
+    /* COMBOS */
+    .combos-wrap{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem}
+    .combo-card{background:#fff;border:2.5px solid var(--border2);border-radius:26px;overflow:hidden;box-shadow:var(--shadow-lg);transition:transform .22s,box-shadow .22s}
+    .combo-card:hover{transform:translateY(-6px);box-shadow:0 24px 64px rgba(0,0,0,.14)}
+    .combo-header{padding:1.8rem 1.8rem 1.4rem;position:relative}
+    .combo-header.boy{background:linear-gradient(135deg,#dbeafe,#eff6ff)}
+    .combo-header.girl{background:linear-gradient(135deg,#fce7f3,#fdf2f8)}
+    .combo-emoji{font-size:2.8rem;margin-bottom:.4rem;display:block}
+    .combo-name{font-family:'Baloo 2',sans-serif;font-size:1.45rem;font-weight:800;margin-bottom:.15rem}
+    .combo-name.boy{color:#1d4ed8}
+    .combo-name.girl{color:#be185d}
+    .combo-price-block{display:flex;align-items:baseline;gap:.6rem;margin-top:.65rem}
+    .combo-price-now{font-family:'Baloo 2',sans-serif;font-size:2.6rem;font-weight:800;line-height:1}
+    .combo-price-now.boy{color:#1d4ed8}
+    .combo-price-now.girl{color:#be185d}
+    .combo-price-was{font-size:1rem;font-weight:700;color:var(--muted);text-decoration:line-through}
+    .combo-save-badge{position:absolute;top:1.1rem;right:1.1rem;background:var(--accent);color:#fff;font-size:.68rem;font-weight:800;padding:.26rem .72rem;border-radius:999px;text-transform:uppercase;letter-spacing:.05em;box-shadow:0 4px 12px rgba(255,77,109,.4)}
+    .combo-body{padding:1.3rem 1.8rem 1.8rem}
+    .combo-items{list-style:none;display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.4rem}
+    .combo-items li{display:flex;align-items:center;gap:.6rem;font-size:.87rem;font-weight:700}
+    .combo-items li .ci-icon{font-size:1rem;width:24px;text-align:center;flex-shrink:0}
+    .combo-items li .ci-name{flex:1}
+    .combo-items li .ci-price{font-size:.78rem;color:var(--muted);font-weight:700}
+    .combo-items li .ci-check{color:var(--green);font-size:.88rem;flex-shrink:0}
+    .combo-shipping{font-size:.77rem;color:var(--muted);font-weight:700;margin-bottom:1.1rem;background:var(--bg2);padding:.42rem .82rem;border-radius:10px;border:1.5px solid var(--border);display:inline-block}
 
-    .sec-title { font-family: 'Syne', sans-serif; font-size: clamp(1.8rem, 2.5vw + 0.5rem, 2.8rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 0.6rem; }
-    .sec-sub { font-size: 0.92rem; color: var(--muted); max-width: 36rem; margin-bottom: 2.5rem; line-height: 1.7; }
-    .sec-header { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1.2rem; margin-bottom: 2rem; }
+    /* TALKING POSTER */
+    .poster-section{background:linear-gradient(135deg,#fef9ee,#fff7f0)}
+    .poster-wrap{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+    .poster-visual{border-radius:22px;overflow:hidden;box-shadow:var(--shadow-lg);background:#fff;border:2.5px solid #fde68a}
+    .poster-features{display:grid;grid-template-columns:1fr 1fr;gap:.85rem;margin-top:1.1rem}
+    .poster-feat{background:#fff;border:2px solid var(--border2);border-radius:14px;padding:.85rem;display:flex;align-items:flex-start;gap:.55rem;box-shadow:var(--shadow);transition:transform .2s}
+    .poster-feat:hover{transform:translateY(-3px)}
+    .poster-feat .pf-icon{font-size:1.3rem;flex-shrink:0;margin-top:.05rem}
+    .poster-feat .pf-title{font-size:.8rem;font-weight:800;color:var(--text);line-height:1.2}
+    .poster-feat .pf-desc{font-size:.7rem;color:var(--muted);font-weight:600;margin-top:.12rem;line-height:1.5}
+    .brain-pills{display:flex;flex-direction:column;gap:.7rem;margin:1.3rem 0}
+    .brain-pill{display:flex;align-items:center;gap:.75rem;background:#fff;border:2px solid var(--border2);border-radius:14px;padding:.75rem .95rem;box-shadow:var(--shadow)}
+    .brain-pill .bp-icon{font-size:1.4rem;flex-shrink:0}
+    .brain-pill .bp-text{flex:1}
+    .brain-pill .bp-title{font-size:.83rem;font-weight:800;color:var(--text)}
+    .brain-pill .bp-desc{font-size:.72rem;color:var(--muted);font-weight:600;line-height:1.5;margin-top:.1rem}
+    .brain-pill .bp-badge{font-size:.62rem;font-weight:800;padding:.16rem .52rem;border-radius:999px;white-space:nowrap;flex-shrink:0;background:rgba(61,156,245,.12);color:var(--blue);border:1.5px solid rgba(61,156,245,.25)}
 
-    /* COMBO BANNER */
-    .combo-banner { background: var(--surface); border: 1px solid var(--border2); border-radius: var(--r-xl); padding: 2.5rem 2.8rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem; position: relative; overflow: hidden; margin-bottom: 2.5rem; }
-    .combo-banner::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--accent), transparent); }
-    .combo-banner::after { content: ''; position: absolute; width: 350px; height: 350px; right: -80px; top: -80px; background: radial-gradient(circle, rgba(255,92,53,0.07), transparent 70%); border-radius: 50%; pointer-events: none; }
-    .combo-banner h2 { font-family: 'Syne', sans-serif; font-size: 1.7rem; font-weight: 800; margin-bottom: 0.35rem; letter-spacing: -0.01em; }
-    .combo-banner p { font-size: 0.88rem; color: var(--muted); max-width: 28rem; }
-    .combo-price-block { text-align: center; flex-shrink: 0; }
-    .combo-price-num { font-family: 'Syne', sans-serif; font-size: 3.2rem; font-weight: 800; color: var(--gold); line-height: 1; display: block; }
-    .combo-price-sub { font-size: 0.72rem; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; display: block; margin-bottom: 0.8rem; }
-
-    /* GRIDS */
-    .grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.2rem; }
-    .grid-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.2rem; }
-
-    /* PRODUCT CARDS */
-    .pcard { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg); overflow: hidden; display: flex; flex-direction: column; transition: border-color .2s, transform .22s, box-shadow .22s; }
-    .pcard:hover { border-color: var(--border2); transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0,0,0,0.35); }
-
-    .pcard-img { width: 100%; aspect-ratio: 4/3; overflow: hidden; background: var(--surface2); }
-    .pcard-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; display: block; }
-    .pcard:hover .pcard-img img { transform: scale(1.06); }
-
-    .pcard-body { padding: 1.2rem 1.2rem 1.4rem; flex: 1; display: flex; flex-direction: column; gap: 0.4rem; }
-    .pcard-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.2rem; }
-
-    .pcard-chip { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; padding: 0.15rem 0.55rem; border-radius: 999px; background: var(--surface2); color: var(--muted); border: 1px solid var(--border); }
-    .pcard-chip.accent { background: rgba(255,92,53,0.12); color: var(--accent); border-color: rgba(255,92,53,0.2); }
-    .pcard-chip.green { background: rgba(46,204,113,0.1); color: var(--green); border-color: rgba(46,204,113,0.2); }
-
-    .pcard-price { font-family: 'Syne', sans-serif; font-size: 1.15rem; font-weight: 800; color: var(--text); }
-    .pcard-incl { font-size: 0.7rem; font-weight: 700; color: var(--green); text-transform: uppercase; letter-spacing: 0.06em; }
-    .pcard-title { font-size: 0.95rem; font-weight: 600; color: var(--text); line-height: 1.3; }
-    .pcard-desc { font-size: 0.8rem; color: var(--muted); flex: 1; line-height: 1.6; }
-    .pcard-tag { display: inline-flex; align-items: center; gap: 0.25rem; font-size: 0.72rem; padding: 0.18rem 0.6rem; border-radius: 999px; background: var(--surface2); color: var(--muted); border: 1px solid var(--border); margin-top: 0.3rem; width: fit-content; }
-
-    .cta-mini { background: var(--surface); border: 1px dashed rgba(255,92,53,0.3); border-radius: var(--r-lg); padding: 1.6rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 0.8rem; }
-    .cta-mini .icon { font-size: 2rem; }
-    .cta-mini strong { font-size: 0.95rem; color: var(--text); font-weight: 600; }
-    .cta-mini p { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
-
-    /* BOOK BANNER */
-    .book-banner { background: var(--surface); border: 1px solid var(--border2); border-radius: var(--r-xl); padding: 2rem 2.8rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; position: relative; overflow: hidden; margin-bottom: 2.5rem; }
-    .book-banner::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--green), transparent); }
-    .book-banner::after { content: ''; position: absolute; width: 300px; height: 300px; right: -60px; top: -60px; background: radial-gradient(circle, rgba(46,204,113,0.06), transparent 70%); border-radius: 50%; pointer-events: none; }
-    .book-banner h2 { font-family: 'Syne', sans-serif; font-size: 1.5rem; font-weight: 800; margin-bottom: 0.25rem; }
-    .book-banner p { font-size: 0.86rem; color: var(--muted); }
-
-    .book-pills { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; }
-    .book-pill { background: var(--surface2); border: 1px solid var(--border2); border-radius: var(--r); padding: 0.8rem 1.3rem; text-align: center; }
-    .book-pill .amount { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800; color: var(--green); display: block; line-height: 1; }
-    .book-pill .sub { font-size: 0.7rem; color: var(--muted); display: block; margin-top: 0.2rem; }
-    .book-pill.hl { border-color: rgba(46,204,113,0.35); background: rgba(46,204,113,0.06); }
+    /* LIBROS */
+    .english-hero{background:linear-gradient(135deg,#eff6ff,#f0fdf4);border:2.5px solid #bfdbfe;border-radius:26px;padding:2rem 2.2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.6rem;position:relative;overflow:hidden;margin-bottom:2rem}
+    .english-hero::before{content:'';position:absolute;width:250px;height:250px;right:-60px;top:-60px;background:radial-gradient(circle,rgba(61,156,245,.12),transparent 70%);border-radius:50%;pointer-events:none}
+    .english-hero h2{font-family:'Baloo 2',sans-serif;font-size:1.45rem;font-weight:800;margin-bottom:.25rem;color:var(--blue)}
+    .english-hero p{font-size:.86rem;color:var(--muted);font-weight:600}
+    .skill-pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.5rem 0}
+    .skill-pill{display:flex;align-items:center;gap:.42rem;background:#fff;border:2px solid var(--border2);border-radius:12px;padding:.6rem .9rem;font-size:.78rem;font-weight:700;color:var(--text);box-shadow:var(--shadow)}
+    .skill-pill .sp-icon{font-size:1.05rem}
+    .skill-pill .sp-label{display:flex;flex-direction:column;line-height:1.2}
+    .skill-pill .sp-label small{font-size:.64rem;font-weight:600;color:var(--muted)}
+    .book-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+    .book-card{background:#fff;border:2.5px solid var(--border2);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
+    .book-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+    .book-img{aspect-ratio:4/3;overflow:hidden;background:#f0f7ff}
+    .book-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+    .book-card:hover .book-img img{transform:scale(1.06)}
+    .book-body{padding:.95rem 1.1rem 1.2rem}
+    .book-chip{display:inline-block;font-size:.66rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;padding:.15rem .55rem;border-radius:999px;background:rgba(61,156,245,.1);color:var(--blue);border:1.5px solid rgba(61,156,245,.2);margin-bottom:.4rem}
+    .book-title{font-size:.9rem;font-weight:800;color:var(--text);margin-bottom:.22rem;line-height:1.3}
+    .book-desc{font-size:.77rem;color:var(--muted);font-weight:600;line-height:1.6;margin-bottom:.4rem}
+    .book-price{font-family:'Baloo 2',sans-serif;font-size:1.2rem;font-weight:800;color:var(--blue)}
+    .book-promo-block{background:linear-gradient(135deg,#dbeafe,#eff6ff);border:2.5px solid #bfdbfe;border-radius:20px;padding:1.3rem;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:.65rem}
+    .book-promo-block .icon{font-size:2rem}
+    .book-promo-block strong{font-family:'Baloo 2',sans-serif;font-size:1rem;color:var(--blue)}
+    .book-promo-block p{font-size:.78rem;color:var(--muted);font-weight:600}
 
     /* BENEFITS */
-    .benefits { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.2rem; }
-    .benefit { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 1.8rem; transition: border-color .2s, transform .2s; }
-    .benefit:hover { border-color: var(--border2); transform: translateY(-3px); }
-    .benefit-num { font-family: 'Syne', sans-serif; font-size: 2.5rem; font-weight: 800; color: var(--accent); line-height: 1; margin-bottom: 0.6rem; opacity: 0.4; }
-    .benefit h3 { font-weight: 700; font-size: 1rem; margin-bottom: 0.4rem; color: var(--text); }
-    .benefit p { font-size: 0.83rem; color: var(--muted); line-height: 1.7; }
+    .benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+    .benefit-card{background:#fff;border:2.5px solid var(--border2);border-radius:20px;padding:1.5rem;text-align:center;box-shadow:var(--shadow);transition:transform .2s}
+    .benefit-card:hover{transform:translateY(-4px)}
+    .benefit-icon{font-size:2.3rem;margin-bottom:.65rem;display:block}
+    .benefit-card h3{font-family:'Baloo 2',sans-serif;font-size:.98rem;font-weight:800;margin-bottom:.3rem}
+    .benefit-card p{font-size:.79rem;color:var(--muted);font-weight:600;line-height:1.65}
 
     /* FINAL CTA */
-    .final-cta-wrap { margin: 5rem 0 0; }
-    .final-cta { background: var(--surface); border: 1px solid var(--border2); border-radius: var(--r-xl); padding: 4rem; text-align: center; position: relative; overflow: hidden; }
-    .final-cta::before { content: ''; position: absolute; width: 500px; height: 500px; top: -150px; left: 50%; transform: translateX(-50%); background: radial-gradient(circle, rgba(255,92,53,0.1), transparent 65%); border-radius: 50%; pointer-events: none; }
-    .final-cta::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--accent), transparent); }
-    .final-cta h2 { font-family: 'Syne', sans-serif; font-size: clamp(2rem, 3vw + 0.5rem, 3rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.8rem; position: relative; z-index: 1; }
-    .final-cta p { font-size: 0.95rem; color: var(--muted); max-width: 32rem; margin: 0 auto 2.2rem; line-height: 1.7; position: relative; z-index: 1; }
-    .final-cta-btns { display: flex; justify-content: center; gap: 0.9rem; flex-wrap: wrap; position: relative; z-index: 1; }
+    .final-cta{background:linear-gradient(135deg,#fff0f5,#f0f7ff,#f0fff4);border:2.5px solid var(--border2);border-radius:28px;padding:3.5rem 1.5rem;text-align:center;box-shadow:var(--shadow-lg)}
+    .final-cta h2{font-family:'Baloo 2',sans-serif;font-size:clamp(1.8rem,3vw + .5rem,2.5rem);font-weight:800;margin-bottom:.65rem}
+    .final-cta p{font-size:.9rem;color:var(--muted);max-width:30rem;margin:0 auto 2rem;font-weight:600;line-height:1.75}
+    .final-cta-btns{display:flex;justify-content:center;gap:.75rem;flex-wrap:wrap}
 
     /* DIVIDER */
-    .divider { height: 1px; background: linear-gradient(90deg, transparent, var(--border2), transparent); margin: 4.5rem 0 0; }
+    .divider{height:2px;background:var(--border);margin:3.5rem 0 0}
 
     /* FOOTER */
-    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 2rem 0 1.5rem; }
-    .footer-brand { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 0.9rem; }
-    .footer-brand span { color: var(--accent); }
-    .footer-inner p { font-size: 0.78rem; color: var(--muted); }
-    .footer-inner a { color: var(--green); font-weight: 600; }
+    footer{padding:1.8rem 0}
+    .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+    .footer-brand{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:1rem}
+    .footer-brand span{color:var(--accent)}
+    .footer-inner p{font-size:.78rem;color:var(--muted);font-weight:600}
+    .footer-inner a{color:var(--green);font-weight:800}
 
-    /* ANIMATIONS */
-    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
-    .reveal.on { opacity: 1; transform: none; }
+    /* TOAST */
+    #sp-toast{position:fixed;bottom:1.2rem;left:1.2rem;z-index:999;max-width:290px;min-width:230px;background:#fff;border:2px solid var(--border2);border-left:4px solid var(--green);border-radius:16px;padding:.82rem .92rem;display:flex;align-items:center;gap:.7rem;box-shadow:0 12px 40px rgba(0,0,0,.12);transform:translateX(-120%);transition:transform .4s cubic-bezier(.34,1.56,.64,1),opacity .3s;opacity:0;pointer-events:none}
+    #sp-toast.show{transform:translateX(0);opacity:1;pointer-events:auto}
+    .sp-avatar{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;font-weight:800;color:#fff}
+    .sp-name{font-weight:800;font-size:.82rem;color:var(--text)}
+    .sp-action{font-size:.76rem;color:var(--muted);font-weight:600;margin-top:.05rem;line-height:1.4}
+    .sp-action b{color:var(--accent)}
+    .sp-time{font-size:.65rem;color:var(--green);margin-top:.1rem;font-weight:700}
 
-    .stagger > * { opacity: 0; transform: translateY(22px); transition: opacity 0.5s ease, transform 0.5s ease; }
-    .stagger.on > *:nth-child(1) { opacity:1;transform:none;transition-delay:.04s }
-    .stagger.on > *:nth-child(2) { opacity:1;transform:none;transition-delay:.11s }
-    .stagger.on > *:nth-child(3) { opacity:1;transform:none;transition-delay:.18s }
-    .stagger.on > *:nth-child(4) { opacity:1;transform:none;transition-delay:.25s }
-    .stagger.on > *:nth-child(5) { opacity:1;transform:none;transition-delay:.32s }
-    .stagger.on > *:nth-child(6) { opacity:1;transform:none;transition-delay:.39s }
-    .stagger.on > *:nth-child(7) { opacity:1;transform:none;transition-delay:.46s }
-    .stagger.on > *:nth-child(8) { opacity:1;transform:none;transition-delay:.53s }
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.on{opacity:1;transform:none}
+    .stagger>*{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
+    .stagger.on>*:nth-child(1){opacity:1;transform:none;transition-delay:.04s}
+    .stagger.on>*:nth-child(2){opacity:1;transform:none;transition-delay:.11s}
+    .stagger.on>*:nth-child(3){opacity:1;transform:none;transition-delay:.18s}
+    .stagger.on>*:nth-child(4){opacity:1;transform:none;transition-delay:.25s}
+    .stagger.on>*:nth-child(5){opacity:1;transform:none;transition-delay:.32s}
+    .stagger.on>*:nth-child(6){opacity:1;transform:none;transition-delay:.39s}
 
     /* RESPONSIVE */
-    @media(max-width:1024px) { .grid-4{grid-template-columns:repeat(2,1fr)} }
-    @media(max-width:900px) {
-      .hero-grid{grid-template-columns:1fr}
+    @media(max-width:900px){
+      .hero-grid,.combos-wrap,.poster-wrap,.book-grid{grid-template-columns:1fr}
       .hero-card{animation:none}
-      .grid-3{grid-template-columns:repeat(2,1fr)}
-      .benefits{grid-template-columns:repeat(2,1fr)}
-      .combo-banner,.book-banner{padding:2rem 1.8rem}
+      .benefits-grid{grid-template-columns:1fr 1fr}
+      .poster-features{grid-template-columns:1fr 1fr}
+      .english-hero{flex-direction:column;align-items:flex-start;padding:1.6rem 1.4rem}
     }
-    @media(max-width:640px) {
+    @media(max-width:640px){
       .nav-links{display:none}
-      .grid-3,.grid-4{grid-template-columns:1fr}
-      .benefits{grid-template-columns:1fr}
-      .final-cta{padding:2.5rem 1.5rem}
-      .combo-banner,.book-banner{flex-direction:column;align-items:flex-start}
+      .benefits-grid,.poster-features{grid-template-columns:1fr}
+      .final-cta{padding:2.2rem 1rem}
       .footer-inner{flex-direction:column;text-align:center}
+      .btn-wa{padding:.8rem 1.1rem;font-size:.84rem}
+      h1{font-size:clamp(1.9rem,7vw,3rem)}
     }
   </style>
 </head>
@@ -337,88 +222,68 @@
 <header>
   <div class="container nav">
     <div class="logo">
-      <div class="logo-icon">🐾</div>
-      <div>
-        Importaciones Puma
-        <span class="logo-sub">Juguetes & Libros Educativos · 2025–2026</span>
-      </div>
+      <div class="logo-icon"><img src="https://i.ibb.co/zHFMV5m2/Chat-GPT-Image-1-may-2026-11-38-31-p-m.png" alt="Logo Puma" style="width:100%;height:100%;object-fit:cover;border-radius:10px"></div>
+      <div>Importaciones Puma<span class="logo-sub">Juguetes & Libros · Ecuador</span></div>
     </div>
     <nav class="nav-links">
-      <a href="#combo">Combo</a>
-      <a href="#juguetes">Juguetes</a>
-      <a href="#libros">Libros</a>
-      <a href="#nosotros">Nosotros</a>
+      <a href="#combos">Combos</a>
+      <a href="#poster">Talking Poster</a>
+      <a href="#libros">Inglés</a>
     </nav>
-    <a class="btn-wa" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20más%20información." target="_blank" rel="noopener">
-      <span style="font-size:1.1rem;">💬</span>
-      <span class="wa-label">Pedir ahora<small>Paga al recibir</small></span>
-    </a>
+    <a class="btn-wa-nav" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20más%20información." target="_blank" rel="noopener">💬 Pedir ahora</a>
   </div>
 </header>
 
-<!-- TICKER -->
 <div class="ticker-strip" aria-hidden="true">
-  <div class="ticker-track" id="tickerTrack">
-    <span class="ticker-item"><span class="ti-dot"></span>Pide ahora <span class="ti-hl">&nbsp;·&nbsp; Paga al recibir</span></span>
-    <span class="ticker-sep">❖</span>
-    <span class="ticker-item"><span class="ti-dot"></span>Envíos a todo <span class="ti-hl">&nbsp;Ecuador</span></span>
-    <span class="ticker-sep">❖</span>
-    <span class="ticker-item"><span class="ti-dot"></span>Stock limitado — <span class="ti-hl">&nbsp;¡Aparta el tuyo hoy!</span></span>
-    <span class="ticker-sep">❖</span>
-    <span class="ticker-item"><span class="ti-dot"></span>Pide ahora <span class="ti-hl">&nbsp;·&nbsp; Paga al recibir</span></span>
-    <span class="ticker-sep">❖</span>
-    <span class="ticker-item"><span class="ti-dot"></span>Importación directa — <span class="ti-hl">&nbsp;Precios mayoristas</span></span>
-    <span class="ticker-sep">❖</span>
-    <span class="ticker-item"><span class="ti-dot"></span>Pide ahora <span class="ti-hl">&nbsp;·&nbsp; Paga al recibir</span></span>
-    <span class="ticker-sep">❖</span>
-    <span class="ticker-item"><span class="ti-dot"></span>Envíos a todo <span class="ti-hl">&nbsp;Ecuador</span></span>
-    <span class="ticker-sep">❖</span>
-    <span class="ticker-item"><span class="ti-dot"></span>Stock limitado — <span class="ti-hl">&nbsp;¡Aparta el tuyo hoy!</span></span>
-    <span class="ticker-sep">❖</span>
-    <span class="ticker-item"><span class="ti-dot"></span>Pide ahora <span class="ti-hl">&nbsp;·&nbsp; Paga al recibir</span></span>
-    <span class="ticker-sep">❖</span>
-    <span class="ticker-item"><span class="ti-dot"></span>Importación directa — <span class="ti-hl">&nbsp;Precios mayoristas</span></span>
-    <span class="ticker-sep">❖</span>
+  <div class="ticker-track">
+    <span class="ticker-item">🎁 Paga al recibir</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">🚚 Envíos a todo Ecuador</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">⭐ Stock limitado — ¡Aparta el de tu peque!</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">🎒 Importación directa</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">💬 Respuesta inmediata por WhatsApp</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">🎁 Paga al recibir</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">🚚 Envíos a todo Ecuador</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">⭐ Stock limitado — ¡Aparta el de tu peque!</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">🎒 Importación directa</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">💬 Respuesta inmediata por WhatsApp</span><span class="ticker-sep">✦</span>
   </div>
 </div>
 
+<div class="hero-confetti" id="confetti" aria-hidden="true"></div>
+
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-blob1"></div><div class="hero-blob2"></div>
   <div class="container hero-grid">
     <div class="reveal on" style="transition-delay:.05s">
-      <div class="eyebrow">✦ <span>Catálogo 2025–2026</span> · Ecuador</div>
-      <h1>Juguetes que<br><em>enseñan</em> mientras<br>divierten.</h1>
-      <p class="hero-sub">Combos educativos y libros interactivos para niños de 1 a 10 años. Importamos directo para que tú regales mejor — con envíos a todo Ecuador.</p>
+      <div class="hero-badge">✨ Catálogo 2025–2026</div>
+      <h1>Regalos que <span class="hl-red">enamoran</span> a <span class="hl-blue">tu niño</span> y que le enseñan jugando</h1>
+      <p class="hero-sub">Dale a tu pequeño o pequeña los mejores juguetes educativos del mercado. Importamos directo para que tú regales mejor — con envíos a todo Ecuador. 🇪🇨</p>
       <div class="hero-cta">
-        <a class="btn-wacta" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20el%20combo%20de%205%20juguetes%20por%20$20." target="_blank" rel="noopener">
-            <span class="wa-icon">💬</span>
-            <span class="wa-text">Ver combo — $20<small>Te respondemos al instante</small></span>
-          </a>
-          <a class="btn btn-ghost" href="#libros">Promo libros</a>
+        <a class="btn-wa" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20ver%20los%20combos%20disponibles." target="_blank" rel="noopener">
+          <span class="wa-icon">💬</span><span class="wa-text">Ver combos para tu niño →<small>¡Te respondemos al instante!</small></span>
+        </a>
+        <a class="btn-ghost" href="#libros">📚 Libros de inglés</a>
       </div>
       <div class="trust-row">
-        <span>🚚 <b>Envíos a todo Ecuador</b></span>
+        <span>🚚 <strong>Todo Ecuador</strong></span>
         <span>📦 Importación propia</span>
-        <span>💬 Atención por WhatsApp</span>
+        <span>💬 WhatsApp directo</span>
       </div>
     </div>
-
-    <div class="reveal on" style="transition-delay:.2s">
+    <div class="reveal on" style="transition-delay:.22s">
       <div class="hero-card">
-        <div class="hc-badge">TOP COMBO</div>
-        <div class="hc-label">Pack 5 juguetes educativos</div>
-        <div class="hc-price">$20</div>
-        <div class="hc-price-note">Precio especial · Stock limitado</div>
+        <div class="hc-badge">🔥 ¡Más pedidos!</div>
+        <div class="hc-stars">🌟🌟🌟🌟🌟</div>
+        <div class="hc-title">Disponible ahora</div>
         <div class="hc-items">
-          <div class="hc-item"><div class="hc-dot"></div>Computadora educativa interactiva</div>
-          <div class="hc-item"><div class="hc-dot"></div>Teléfono educativo con sonidos</div>
-          <div class="hc-item"><div class="hc-dot"></div>Pizarra LCD 10" borrable</div>
-          <div class="hc-item"><div class="hc-dot"></div>Tablero fluorescente para dibujar</div>
-          <div class="hc-item"><div class="hc-dot"></div>Mini helicóptero con luces</div>
+          <div class="hc-item" style="border-color:#bfdbfe;background:#eff6ff"><div class="dot" style="background:#1d4ed8"></div>👦 Combo Niño — $45</div>
+          <div class="hc-item" style="border-color:#fbcfe8;background:#fdf2f8"><div class="dot" style="background:#be185d"></div>👧 Combo Niña — $40</div>
+          <div class="hc-item" style="border-color:#fde68a;background:#fefce8"><div class="dot" style="background:#d97706"></div>📣 Talking Poster Bilingüe — $25</div>
+          <div class="hc-item" style="border-color:#bbf7d0;background:#f0fdf4"><div class="dot" style="background:#16a34a"></div>📚 Libro de Inglés — $25</div>
         </div>
-        <a class="btn-wacta" style="width:100%;justify-content:center;" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20el%20combo%20de%205%20juguetes%20por%20$20." target="_blank" rel="noopener">
-          <span class="wa-icon">💬</span>
-          <span class="wa-text">Pedir este combo →<small>Stock limitado · Respuesta rápida</small></span>
+        <a class="btn-wa" style="width:100%;justify-content:center" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20ver%20los%20combos%20disponibles." target="_blank" rel="noopener">
+          <span class="wa-icon">💬</span><span class="wa-text">Aparta el de tu peque →<small>Stock limitado · ¡No te quedes sin el tuyo!</small></span>
         </a>
       </div>
     </div>
@@ -427,85 +292,59 @@
 
 <div class="divider"></div>
 
-<!-- COMBO -->
-<section id="combo">
+<!-- COMBOS -->
+<section id="combos">
   <div class="container">
-    <div class="combo-banner reveal">
-      <div>
-        <div class="sec-label">✦ Pack educativo</div>
-        <h2>Combo 5 juguetes — un solo precio</h2>
-        <p>Estimula creatividad, memoria y coordinación. Perfecto como regalo o para revender. Incluye los 5 juguetes sin excepción.</p>
-      </div>
-      <div class="combo-price-block">
-        <span class="combo-price-num">$20</span>
-        <span class="combo-price-sub">combo completo</span>
-        <a class="btn-wacta" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20el%20combo%20de%205%20juguetes." target="_blank" rel="noopener">
-          <span class="wa-icon">💬</span>
-          <span class="wa-text">Pedir ahora<small>Envíos a todo Ecuador</small></span>
-        </a>
-      </div>
+    <div class="reveal" style="text-align:center;margin-bottom:2.2rem">
+      <div class="sec-eyebrow red" style="margin:0 auto .65rem">🎁 Combos especiales</div>
+      <div class="sec-title">Combo para Niño y Niña</div>
+      <div class="sec-sub" style="margin:0 auto">Escoge el combo ideal para tu niño o tu niña — todo lo que necesita en un solo pack a un precio increíble.</div>
     </div>
-
-    <div class="grid-3 stagger">
-
-      <article class="pcard">
-        <div class="pcard-img"><a href="https://ibb.co/bRqbKVJD" target="_blank" rel="noopener"><img src="https://i.ibb.co/NnQTyqSb/Whats-App-Image-2025-11-27-at-11-37-58-PM.jpg" alt="Computadora educativa" loading="lazy"></a></div>
-        <div class="pcard-body">
-          <div class="pcard-top"><span class="pcard-chip accent">01 de 5</span><span class="pcard-incl">✔ Incluido</span></div>
-          <div class="pcard-title">Computadora educativa interactiva</div>
-          <div class="pcard-desc">Teclado con letras, números y melodías. Introduce vocabulario, colores y sonidos básicos de forma divertida.</div>
-          <span class="pcard-tag">🔤 Letras & sonidos</span>
+    <div class="combos-wrap stagger">
+      <!-- NIÑO -->
+      <div class="combo-card">
+        <div class="combo-header boy">
+          <div class="combo-save-badge">¡Ahorra $15! 🔥</div>
+          <span class="combo-emoji">👦🚀</span>
+          <div class="combo-name boy">Combo Niño</div>
+          <p style="font-size:.82rem;color:#3b82f6;font-weight:700">Todo lo que tu niño necesita en un solo pack</p>
+          <div class="combo-price-block"><span class="combo-price-now boy">$45</span><span class="combo-price-was">$60</span></div>
         </div>
-      </article>
-
-      <article class="pcard">
-        <div class="pcard-img"><a href="https://ibb.co/TDZGQwnF" target="_blank" rel="noopener"><img src="https://i.ibb.co/mrmKnRYM/Whats-App-Image-2025-11-27-at-11-37-57-PM-1.jpg" alt="Teléfono educativo" loading="lazy"></a></div>
-        <div class="pcard-body">
-          <div class="pcard-top"><span class="pcard-chip accent">02 de 5</span><span class="pcard-incl">✔ Incluido</span></div>
-          <div class="pcard-title">Teléfono educativo con sonidos</div>
-          <div class="pcard-desc">Botones con imágenes, música y efectos. Estimula memoria auditiva y el juego simbólico.</div>
-          <span class="pcard-tag">📱 Juego interactivo</span>
+        <div class="combo-body">
+          <ul class="combo-items">
+            <li><span class="ci-icon">🤖</span><span class="ci-name">Robot interactivo</span><span class="ci-price">$25</span><span class="ci-check">✔</span></li>
+            <li><span class="ci-icon">📱</span><span class="ci-name">Celular educativo electrónico</span><span class="ci-price">$5</span><span class="ci-check">✔</span></li>
+            <li><span class="ci-icon">📚</span><span class="ci-name">Libro inglés & español</span><span class="ci-price">$25</span><span class="ci-check">✔</span></li>
+            <li><span class="ci-icon">🎮</span><span class="ci-name">Tablet de juguete</span><span class="ci-price">$5</span><span class="ci-check">✔</span></li>
+          </ul>
+          <span class="combo-shipping">🚚 Envío no incluido — se coordina según tu ciudad</span>
+          <a class="btn-wa" style="width:100%;justify-content:center" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20pedir%20el%20combo%20de%20niño%20en%20$45." target="_blank" rel="noopener">
+            <span class="wa-icon">💬</span><span class="wa-text">Quiero este combo para mi niño — $45<small>¡Escríbenos y te lo apartamos!</small></span>
+          </a>
         </div>
-      </article>
-
-      <article class="pcard">
-        <div class="pcard-img"><a href="https://ibb.co/Ng121ctk" target="_blank" rel="noopener"><img src="https://i.ibb.co/CpJKJRmX/Whats-App-Image-2025-11-27-at-11-37-57-PM-2.jpg" alt="Pizarra LCD" loading="lazy"></a></div>
-        <div class="pcard-body">
-          <div class="pcard-top"><span class="pcard-chip accent">03 de 5</span><span class="pcard-incl">✔ Incluido</span></div>
-          <div class="pcard-title">Pizarra LCD 10"</div>
-          <div class="pcard-desc">Tablet de escritura para dibujar y practicar números y letras. Borrado con un solo botón, reutilizable.</div>
-          <span class="pcard-tag">✏️ Escritura & dibujo</span>
+      </div>
+      <!-- NIÑA -->
+      <div class="combo-card">
+        <div class="combo-header girl">
+          <div class="combo-save-badge">¡Ahorra $11! 💖</div>
+          <span class="combo-emoji">👧🌸</span>
+          <div class="combo-name girl">Combo Niña</div>
+          <p style="font-size:.82rem;color:#ec4899;font-weight:700">Un pack lleno de color y diversión para tu niña</p>
+          <div class="combo-price-block"><span class="combo-price-now girl">$40</span><span class="combo-price-was">$51</span></div>
         </div>
-      </article>
-
-      <article class="pcard">
-        <div class="pcard-img"><a href="https://ibb.co/JwKwm3WC" target="_blank" rel="noopener"><img src="https://i.ibb.co/bMPMQbj7/Whats-App-Image-2025-11-28-at-1-24-05-AM.jpg" alt="Tablero fluorescente" loading="lazy"></a></div>
-        <div class="pcard-body">
-          <div class="pcard-top"><span class="pcard-chip accent">04 de 5</span><span class="pcard-incl">✔ Incluido</span></div>
-          <div class="pcard-title">Tablero fluorescente</div>
-          <div class="pcard-desc">Tableta de dibujo con luz. Ideal para trazos artísticos y juegos de imaginación en familia.</div>
-          <span class="pcard-tag">🎨 Creatividad</span>
+        <div class="combo-body">
+          <ul class="combo-items">
+            <li><span class="ci-icon">👑</span><span class="ci-name">Muñeca Barbie</span><span class="ci-price">$20</span><span class="ci-check">✔</span></li>
+            <li><span class="ci-icon">🎨</span><span class="ci-name">Tablet de colores</span><span class="ci-price">$10</span><span class="ci-check">✔</span></li>
+            <li><span class="ci-icon">📖</span><span class="ci-name">Libro de aprendizaje</span><span class="ci-price">$11</span><span class="ci-check">✔</span></li>
+            <li><span class="ci-icon">📱</span><span class="ci-name">Celular educativo electrónico</span><span class="ci-price">$5</span><span class="ci-check">✔</span></li>
+            <li><span class="ci-icon">🧸</span><span class="ci-name">Osito de burbujas</span><span class="ci-price">$5</span><span class="ci-check">✔</span></li>
+          </ul>
+          <span class="combo-shipping">🚚 Envío no incluido — se coordina según tu ciudad</span>
+          <a class="btn-wa" style="width:100%;justify-content:center" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20pedir%20el%20combo%20de%20niña%20en%20$40." target="_blank" rel="noopener">
+            <span class="wa-icon">💬</span><span class="wa-text">Quiero este combo para mi niña — $40<small>¡Escríbenos y te lo apartamos!</small></span>
+          </a>
         </div>
-      </article>
-
-      <article class="pcard">
-        <div class="pcard-img"><a href="https://ibb.co/7xHy2mRW" target="_blank" rel="noopener"><img src="https://i.ibb.co/cKPTDnCF/Whats-App-Image-2025-11-28-at-12-03-02-AM.jpg" alt="Mini helicóptero" loading="lazy"></a></div>
-        <div class="pcard-body">
-          <div class="pcard-top"><span class="pcard-chip accent">05 de 5</span><span class="pcard-incl">✔ Incluido</span></div>
-          <div class="pcard-title">Mini helicóptero con luces</div>
-          <div class="pcard-desc">Juguete volador con luces de colores. Súper llamativo, garantiza horas de juego y sorpresa.</div>
-          <span class="pcard-tag">🚁 Luces & movimiento</span>
-        </div>
-      </article>
-
-      <div class="cta-mini">
-        <div class="icon">📦</div>
-        <strong>¿Cómo pedir el combo?</strong>
-        <p>Escríbenos con tu ciudad y te confirmamos stock, costo de envío y fecha de entrega.</p>
-        <a class="btn-wacta" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20el%20combo%20de%205%20juguetes%20por%20$20." target="_blank" rel="noopener">
-          <span class="wa-icon">💬</span>
-          <span class="wa-text">Pedir combo — $20<small>Confirmamos en minutos</small></span>
-        </a>
       </div>
     </div>
   </div>
@@ -513,94 +352,195 @@
 
 <div class="divider"></div>
 
-<!-- MÁS JUGUETES -->
-<section id="juguetes">
+<!-- TALKING POSTER -->
+<section id="poster" class="poster-section" style="padding-top:4rem">
   <div class="container">
-    <div class="sec-header reveal">
-      <div>
-        <div class="sec-label">✦ Catálogo adicional</div>
-        <div class="sec-title">Más juguetes disponibles</div>
-        <div class="sec-sub">Electrónicos y juguetes educativos sueltos. Ideales para rifas, packs personalizados y venta por redes.</div>
-      </div>
-      <a class="btn-wacta" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20ver%20el%20catálogo%20completo." target="_blank" rel="noopener">
-        <span class="wa-icon">💬</span>
-        <span class="wa-text">Ver catálogo completo →<small>Fotos y videos al instante</small></span>
-      </a>
+    <div class="reveal" style="text-align:center;margin-bottom:2.2rem">
+      <div class="sec-eyebrow orange" style="margin:0 auto .65rem">📣 Producto estrella</div>
+      <div class="sec-title">Talking Poster Bilingüe</div>
+      <div class="sec-sub" style="margin:0 auto">El póster interactivo que habla, canta y enseña inglés y español — perfecto para que tu pequeño aprenda desde los 3 años sin que lo sienta como tarea.</div>
     </div>
+    <div class="poster-wrap stagger">
 
-    <div class="grid-4 stagger">
-
-      <article class="pcard">
-        <div class="pcard-body" style="padding-top:1.6rem;">
-          <div class="pcard-top"><span class="pcard-chip">NIF-01</span><span class="pcard-price">$4.50</span></div>
-          <div class="pcard-title">Máquina de educación musical</div>
-          <div class="pcard-desc">Juguete interactivo con botones y melodías. Estimula oído, ritmo y coordinación desde temprana edad.</div>
-          <span class="pcard-tag">🎶 Música & estímulo</span>
+      <!-- SVG VISUAL -->
+      <div>
+        <div class="poster-visual">
+          <svg viewBox="0 0 460 500" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block">
+            <defs>
+              <linearGradient id="bg-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fff9ee"/><stop offset="100%" stop-color="#fffef8"/></linearGradient>
+              <linearGradient id="poster-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#8B1A1A"/><stop offset="100%" stop-color="#6B0F0F"/></linearGradient>
+              <linearGradient id="gold-g" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#fbbf24"/></linearGradient>
+            </defs>
+            <rect width="460" height="500" fill="url(#bg-g)"/>
+            <!-- Price badge -->
+            <rect x="330" y="15" width="110" height="44" rx="22" fill="#ff4d6d"/>
+            <text x="385" y="31" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="800" font-size="10" fill="white">PRECIO ESPECIAL</text>
+            <text x="385" y="51" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="20" fill="white">$25</text>
+            <!-- Poster board -->
+            <rect x="50" y="50" width="310" height="360" rx="18" fill="url(#poster-g)"/>
+            <!-- Gold stripe -->
+            <rect x="50" y="50" width="310" height="38" rx="18" fill="url(#gold-g)"/>
+            <rect x="50" y="70" width="310" height="18" fill="url(#gold-g)"/>
+            <text x="205" y="76" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="16" fill="#1a0a00">Talking ABC · Bilingüe</text>
+            <!-- Speaker -->
+            <circle cx="328" cy="96" r="19" fill="#fbbf24"/>
+            <text x="328" y="103" text-anchor="middle" font-size="16">🔊</text>
+            <!-- Bilingual badge -->
+            <rect x="60" y="91" width="88" height="19" rx="9.5" fill="#ff4d6d"/>
+            <text x="104" y="105" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="800" font-size="9" fill="white">🇬🇧 EN · 🇪🇸 ES</text>
+            <!-- ABC cells — 5 cols x 5 rows -->
+            <!-- Row 1 -->
+            <g transform="translate(58,118)">
+              <rect width="52" height="40" rx="5" fill="#fffbef" stroke="#e5d5a0" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#b45309">A</text><text x="26" y="34" text-anchor="middle" font-size="14">🍎</text>
+            </g>
+            <g transform="translate(114,118)">
+              <rect width="52" height="40" rx="5" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#1d4ed8">B</text><text x="26" y="34" text-anchor="middle" font-size="14">⚽</text>
+            </g>
+            <g transform="translate(170,118)">
+              <rect width="52" height="40" rx="5" fill="#fdf2f8" stroke="#fbcfe8" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#be185d">C</text><text x="26" y="34" text-anchor="middle" font-size="14">🐱</text>
+            </g>
+            <g transform="translate(226,118)">
+              <rect width="52" height="40" rx="5" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#16a34a">D</text><text x="26" y="34" text-anchor="middle" font-size="14">🐶</text>
+            </g>
+            <g transform="translate(282,118)">
+              <rect width="52" height="40" rx="5" fill="#fefce8" stroke="#fde68a" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#d97706">E</text><text x="26" y="34" text-anchor="middle" font-size="14">🐘</text>
+            </g>
+            <!-- Row 2 -->
+            <g transform="translate(58,162)">
+              <rect width="52" height="40" rx="5" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#7c3aed">F</text><text x="26" y="34" text-anchor="middle" font-size="14">🐸</text>
+            </g>
+            <g transform="translate(114,162)">
+              <rect width="52" height="40" rx="5" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#c2410c">G</text><text x="26" y="34" text-anchor="middle" font-size="14">🦒</text>
+            </g>
+            <g transform="translate(170,162)">
+              <rect width="52" height="40" rx="5" fill="#fffbef" stroke="#e5d5a0" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#b45309">H</text><text x="26" y="34" text-anchor="middle" font-size="14">🐴</text>
+            </g>
+            <g transform="translate(226,162)">
+              <rect width="52" height="40" rx="5" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#1d4ed8">I</text><text x="26" y="34" text-anchor="middle" font-size="14">🍦</text>
+            </g>
+            <g transform="translate(282,162)">
+              <rect width="52" height="40" rx="5" fill="#fdf2f8" stroke="#fbcfe8" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#be185d">J</text><text x="26" y="34" text-anchor="middle" font-size="14">🃏</text>
+            </g>
+            <!-- Row 3 -->
+            <g transform="translate(58,206)">
+              <rect width="52" height="40" rx="5" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#16a34a">K</text><text x="26" y="34" text-anchor="middle" font-size="14">🦘</text>
+            </g>
+            <g transform="translate(114,206)">
+              <rect width="52" height="40" rx="5" fill="#fefce8" stroke="#fde68a" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#d97706">L</text><text x="26" y="34" text-anchor="middle" font-size="14">🦁</text>
+            </g>
+            <g transform="translate(170,206)">
+              <rect width="52" height="40" rx="5" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#7c3aed">M</text><text x="26" y="34" text-anchor="middle" font-size="14">🐵</text>
+            </g>
+            <g transform="translate(226,206)">
+              <rect width="52" height="40" rx="5" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#c2410c">N</text><text x="26" y="34" text-anchor="middle" font-size="14">🌙</text>
+            </g>
+            <g transform="translate(282,206)">
+              <rect width="52" height="40" rx="5" fill="#fffbef" stroke="#e5d5a0" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#b45309">O</text><text x="26" y="34" text-anchor="middle" font-size="14">🍊</text>
+            </g>
+            <!-- Row 4 -->
+            <g transform="translate(58,250)">
+              <rect width="52" height="40" rx="5" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#1d4ed8">P</text><text x="26" y="34" text-anchor="middle" font-size="14">🐧</text>
+            </g>
+            <g transform="translate(114,250)">
+              <rect width="52" height="40" rx="5" fill="#fdf2f8" stroke="#fbcfe8" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#be185d">Q</text><text x="26" y="34" text-anchor="middle" font-size="14">👸</text>
+            </g>
+            <g transform="translate(170,250)">
+              <rect width="52" height="40" rx="5" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#16a34a">R</text><text x="26" y="34" text-anchor="middle" font-size="14">🌈</text>
+            </g>
+            <g transform="translate(226,250)">
+              <rect width="52" height="40" rx="5" fill="#fefce8" stroke="#fde68a" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#d97706">S</text><text x="26" y="34" text-anchor="middle" font-size="14">☀️</text>
+            </g>
+            <g transform="translate(282,250)">
+              <rect width="52" height="40" rx="5" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#7c3aed">T</text><text x="26" y="34" text-anchor="middle" font-size="14">🐯</text>
+            </g>
+            <!-- Row 5 -->
+            <g transform="translate(58,294)">
+              <rect width="52" height="40" rx="5" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#c2410c">U</text><text x="26" y="34" text-anchor="middle" font-size="14">☂️</text>
+            </g>
+            <g transform="translate(114,294)">
+              <rect width="52" height="40" rx="5" fill="#fffbef" stroke="#e5d5a0" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#b45309">V</text><text x="26" y="34" text-anchor="middle" font-size="14">🎻</text>
+            </g>
+            <g transform="translate(170,294)">
+              <rect width="52" height="40" rx="5" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#1d4ed8">W</text><text x="26" y="34" text-anchor="middle" font-size="14">🐺</text>
+            </g>
+            <g transform="translate(226,294)">
+              <rect width="52" height="40" rx="5" fill="#fdf2f8" stroke="#fbcfe8" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#be185d">X</text><text x="26" y="34" text-anchor="middle" font-size="14">🎸</text>
+            </g>
+            <g transform="translate(282,294)">
+              <rect width="52" height="40" rx="5" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/><text x="26" y="16" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#16a34a">YZ</text><text x="26" y="34" text-anchor="middle" font-size="14">🦓</text>
+            </g>
+            <!-- Numbers strip -->
+            <rect x="58" y="342" width="290" height="34" rx="8" fill="rgba(251,191,36,.15)" stroke="#fde68a" stroke-width="1.5"/>
+            <text x="203" y="354" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="10" fill="#d97706">NUMBERS · NÚMEROS 1–20</text>
+            <text x="203" y="369" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="700" font-size="12" fill="#b45309">1  2  3  4  5  6  7  8  9  10  ···  20</text>
+            <!-- Piano strip -->
+            <rect x="58" y="384" width="290" height="22" rx="7" fill="rgba(168,85,247,.1)" stroke="#ddd6fe" stroke-width="1.5"/>
+            <text x="72" y="399" font-family="Baloo 2,sans-serif" font-weight="800" font-size="9" fill="#7c3aed">🎹 Do · Re · Mi · Fa · Sol · La · Si · Do 🎵</text>
+            <!-- Chips -->
+            <rect x="28" y="426" width="96" height="28" rx="14" fill="#fff0f5" stroke="#fbcfe8" stroke-width="1.5"/><text x="76" y="444" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="800" font-size="9" fill="#be185d">🎵 Música &amp; Piano</text>
+            <rect x="134" y="426" width="96" height="28" rx="14" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/><text x="182" y="444" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="800" font-size="9" fill="#1d4ed8">🔤 A-Z Bilingüe</text>
+            <rect x="240" y="426" width="96" height="28" rx="14" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/><text x="288" y="444" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="800" font-size="9" fill="#16a34a">🧩 Quiz &amp; Juego</text>
+            <rect x="356" y="422" width="76" height="44" rx="12" fill="#fbbf24"/><text x="394" y="440" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="14" fill="#1a0a00">3+</text><text x="394" y="457" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="700" font-size="9" fill="#1a0a00">años</text>
+            <!-- Stars -->
+            <text x="20" y="78" font-size="18" opacity=".6">⭐</text>
+            <text x="20" y="425" font-size="15" opacity=".5">🌟</text>
+            <text x="420" y="190" font-size="16" opacity=".5">✨</text>
+          </svg>
         </div>
-      </article>
 
-      <article class="pcard">
-        <div class="pcard-body" style="padding-top:1.6rem;">
-          <div class="pcard-top"><span class="pcard-chip">NIF-02</span><span class="pcard-price">$10.00</span></div>
-          <div class="pcard-title">Libro de aprendizaje en inglés</div>
-          <div class="pcard-desc">Libro interactivo con vocabulario básico, letras y actividades en inglés. Excelente para iniciar un segundo idioma.</div>
-          <span class="pcard-tag">🇬🇧 Inglés básico</span>
+        <div class="poster-features stagger" style="margin-top:1.1rem">
+          <div class="poster-feat"><span class="pf-icon">🔤</span><div><div class="pf-title">Letras A-Z Bilingüe</div><div class="pf-desc">Cada letra en inglés y español con imagen + pronunciación en voz real</div></div></div>
+          <div class="poster-feat"><span class="pf-icon">🔢</span><div><div class="pf-title">Números 1–20</div><div class="pf-desc">Reconoce y escucha los números en los dos idiomas</div></div></div>
+          <div class="poster-feat"><span class="pf-icon">🧩</span><div><div class="pf-title">Modo Quiz</div><div class="pf-desc">El póster hace preguntas: ¿Cuál es la letra C? ¿Dónde está el número 7?</div></div></div>
+          <div class="poster-feat"><span class="pf-icon">🎹</span><div><div class="pf-title">Piano & Canciones</div><div class="pf-desc">8 notas musicales + 7 canciones infantiles en inglés (Twinkle, Jingle Bells…)</div></div></div>
         </div>
-      </article>
+      </div>
 
-      <article class="pcard">
-        <div class="pcard-body" style="padding-top:1.6rem;">
-          <div class="pcard-top"><span class="pcard-chip">NIF-03</span><span class="pcard-price">$25.00</span></div>
-          <div class="pcard-title">Robot interactivo</div>
-          <div class="pcard-desc">Robot con luces y movimiento. Muy llamativo para vitrina y contenido en video, ideal para captar atención.</div>
-          <span class="pcard-tag">🤖 Tecnología & juego</span>
-        </div>
-      </article>
+      <!-- BRAIN SKILLS -->
+      <div>
+        <div class="sec-eyebrow orange">🧠 Habilidades mentales</div>
+        <h2 style="font-family:'Baloo 2',sans-serif;font-size:1.6rem;font-weight:800;margin-bottom:.4rem">Lo que desarrolla en el cerebro de tu hijo</h2>
+        <p style="font-size:.86rem;color:var(--muted);font-weight:600;line-height:1.7">Cuando le regalas este póster a tu hijo, le estás dando mucho más que un juguete. Cada sesión de juego desarrolla su cerebro de forma permanente.</p>
 
-      <article class="pcard">
-        <div class="pcard-body" style="padding-top:1.6rem;">
-          <div class="pcard-top"><span class="pcard-chip">NIF-10</span><span class="pcard-price">$9.00</span></div>
-          <div class="pcard-title">Tableta de iluminación educativa</div>
-          <div class="pcard-desc">Tableta luminosa para trazar, dibujar y practicar letras. Ideal para actividades en familia.</div>
-          <span class="pcard-tag">🎨 Creatividad & trazos</span>
+        <div class="brain-pills stagger">
+          <div class="brain-pill">
+            <span class="bp-icon">🧠</span>
+            <div class="bp-text"><div class="bp-title">Memoria a largo plazo</div><div class="bp-desc">La repetición auditiva fija vocabulario en zonas profundas del cerebro — sin esfuerzo consciente.</div></div>
+            <span class="bp-badge">Neurociencia</span>
+          </div>
+          <div class="brain-pill">
+            <span class="bp-icon">👁️</span>
+            <div class="bp-text"><div class="bp-title">Lectura visual temprana</div><div class="bp-desc">Imagen + letra + sonido activan tres vías de aprendizaje al mismo tiempo — más rápido y más sólido.</div></div>
+            <span class="bp-badge">Multisensorial</span>
+          </div>
+          <div class="brain-pill">
+            <span class="bp-icon">🎯</span>
+            <div class="bp-text"><div class="bp-title">Atención y concentración</div><div class="bp-desc">El modo Quiz entrena la atención sostenida: escuchar, procesar y responder — gimnasia mental real.</div></div>
+            <span class="bp-badge">Función ejecutiva</span>
+          </div>
+          <div class="brain-pill">
+            <span class="bp-icon">🎵</span>
+            <div class="bp-text"><div class="bp-title">Inteligencia musical</div><div class="bp-desc">Piano y canciones activan el hemisferio derecho, mejorando creatividad, oído y sentido del ritmo.</div></div>
+            <span class="bp-badge">H. Gardner</span>
+          </div>
+          <div class="brain-pill">
+            <span class="bp-icon">🌍</span>
+            <div class="bp-text"><div class="bp-title">Cerebro bilingüe</div><div class="bp-desc">Los niños bilingües desarrollan mayor flexibilidad cognitiva, mejor resolución de problemas y más empatía.</div></div>
+            <span class="bp-badge">Bialystok 2011</span>
+          </div>
         </div>
-      </article>
 
-      <article class="pcard">
-        <div class="pcard-body" style="padding-top:1.6rem;">
-          <div class="pcard-top"><span class="pcard-chip">JUR-08</span><span class="pcard-price">$5.00</span></div>
-          <div class="pcard-title">Pizarra borrable automática 10"</div>
-          <div class="pcard-desc">Tablet LCD de escritura. Perfecta para listas, dibujos y tareas del cole.</div>
-          <span class="pcard-tag">✏️ Uso diario</span>
+        <div style="background:linear-gradient(135deg,#fefce8,#fffbef);border:2.5px solid #fde68a;border-radius:20px;padding:1.3rem;margin-top:.4rem">
+          <div style="display:flex;align-items:baseline;gap:.55rem;margin-bottom:.25rem">
+            <span style="font-family:'Baloo 2',sans-serif;font-size:2.6rem;font-weight:800;color:#d97706;line-height:1">$25</span>
+            <span style="font-size:.8rem;color:var(--muted);font-weight:700">+ envío según tu ciudad</span>
+          </div>
+          <p style="font-size:.78rem;color:var(--muted);font-weight:600;margin-bottom:.95rem">Póster 41×55 cm · Para niños 3+ años · Inglés &amp; Español · 3 pilas AAA</p>
+          <a class="btn-wa" style="width:100%;justify-content:center" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20pedir%20el%20Talking%20Poster%20bilingüe%20en%20$25." target="_blank" rel="noopener">
+            <span class="wa-icon">💬</span><span class="wa-text">Quiero el Talking Poster para mi niño — $25<small>¡Lo apartamos para ti!</small></span>
+          </a>
         </div>
-      </article>
-
-      <article class="pcard">
-        <div class="pcard-body" style="padding-top:1.6rem;">
-          <div class="pcard-top"><span class="pcard-chip">JUR-12</span><span class="pcard-price">$5.00</span></div>
-          <div class="pcard-title">Helicóptero de juguete USB</div>
-          <div class="pcard-desc">Helicóptero con carga USB y luces. Perfecto para niños que aman movimiento y acción.</div>
-          <span class="pcard-tag">🚁 Acción & luces</span>
-        </div>
-      </article>
-
-      <article class="pcard">
-        <div class="pcard-body" style="padding-top:1.6rem;">
-          <div class="pcard-top"><span class="pcard-chip">JUR-17</span><span class="pcard-price">$14.00</span></div>
-          <div class="pcard-title">Cajero automático de juguete</div>
-          <div class="pcard-desc">Juguete de rol que simula un cajero. Excelente para enseñar ahorro y manejo de dinero jugando.</div>
-          <span class="pcard-tag">💰 Rol & aprendizaje</span>
-        </div>
-      </article>
-
-      <article class="pcard">
-        <div class="pcard-body" style="padding-top:1.6rem;">
-          <div class="pcard-top"><span class="pcard-chip">PTY-01/03/04</span><span class="pcard-price">$10.00</span></div>
-          <div class="pcard-title">Lectura de puntos español & inglés</div>
-          <div class="pcard-desc">Libros bilingües con lectura por puntos en español e inglés. Gran valor educativo para primeras edades.</div>
-          <span class="pcard-tag">🇪🇸🇬🇧 Bilingüe</span>
-        </div>
-      </article>
+      </div>
 
     </div>
   </div>
@@ -608,69 +548,44 @@
 
 <div class="divider"></div>
 
-<!-- LIBROS -->
+<!-- LIBROS INGLÉS -->
 <section id="libros">
   <div class="container">
-    <div class="book-banner reveal">
-      <div>
-        <div class="sec-label green">✦ Colección educativa</div>
-        <h2>Libros con sonido y actividades</h2>
-        <p>Lectura guiada, actividades y sonidos — con <strong style="color:var(--green)">envío incluido</strong>. Un libro <strong style="color:var(--text)">$25</strong>, dos libros <strong style="color:var(--text)">$33.99</strong>.</p>
+    <div class="english-hero reveal">
+      <div style="position:relative;z-index:1">
+        <h2>🧠 ¿Por qué inglés desde niño?</h2>
+        <p>Los primeros años de tu hijo son la ventana de oro del aprendizaje. Su cerebro absorbe el inglés de forma natural — el mejor momento es ahora.</p>
       </div>
-      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:1rem;">
-        <div class="book-pills">
-          <div class="book-pill"><span class="amount">$25</span><span class="sub">1 libro · envío incluido</span></div>
-          <div class="book-pill hl"><span class="amount">$33.99</span><span class="sub">2 libros · ahorra más ↗</span></div>
-        </div>
-        <a class="btn-wacta" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20la%20promo%20de%20libros%20educativos." target="_blank" rel="noopener">
-          <span class="wa-icon">💬</span>
-          <span class="wa-text">Quiero mis libros<small>Respuesta inmediata</small></span>
-        </a>
+      <div style="display:flex;flex-wrap:wrap;gap:.5rem;max-width:320px;position:relative;z-index:1">
+        <div class="skill-pill"><span class="sp-icon">🧩</span><span class="sp-label">Memoria<small>Mejora la atención</small></span></div>
+        <div class="skill-pill"><span class="sp-icon">🗣️</span><span class="sp-label">Vocabulario<small>Más fluidez</small></span></div>
+        <div class="skill-pill"><span class="sp-icon">🎯</span><span class="sp-label">Pensamiento crítico<small>Resuelve problemas</small></span></div>
+        <div class="skill-pill"><span class="sp-icon">🌍</span><span class="sp-label">Futuro<small>Abre puertas</small></span></div>
       </div>
     </div>
 
-    <div class="grid-4 stagger">
-
-      <article class="pcard">
-        <div class="pcard-img"><a href="https://ibb.co/rqdsFnJ" target="_blank" rel="noopener"><img src="https://i.ibb.co/1Bz67Hx/Whats-App-Image-2025-11-28-at-1-00-20-AM.jpg" alt="Y-Book interactivo" loading="lazy"></a></div>
-        <div class="pcard-body">
-          <div class="pcard-top"><span class="pcard-chip green">Libro 01</span><span class="pcard-price">$25 c/envío</span></div>
-          <div class="pcard-title">Y-Book interactivo</div>
-          <div class="pcard-desc">Libro electrónico con lápiz lector, actividades de preguntas y respuestas, letras y números.</div>
-          <span class="pcard-tag">🔤 Lectura guiada</span>
+    <div class="book-grid stagger">
+      <article class="book-card">
+        <div class="book-img"><img src="https://i.ibb.co/1Bz67Hx/Whats-App-Image-2025-11-28-at-1-00-20-AM.jpg" alt="Y-Book Inglés" loading="lazy"></div>
+        <div class="book-body">
+          <div class="book-chip">🇬🇧 Inglés interactivo</div>
+          <div class="book-title">Y-Book Interactivo — Inglés</div>
+          <div class="book-desc">Libro electrónico con lápiz lector, actividades, letras, números y vocabulario en inglés. ¡Aprende jugando!</div>
+          <div class="book-price">$25 <span style="font-size:.74rem;color:var(--green);font-weight:700">📦 Con envío incluido</span></div>
+          <a class="btn-wa" style="margin-top:.8rem;width:100%;justify-content:center" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20pedir%20el%20Y-Book%20de%20inglés%20en%20$25." target="_blank" rel="noopener">
+            <span class="wa-icon">💬</span><span class="wa-text">Quiero este libro para mi hijo — $25<small>Con envío incluido para ti</small></span>
+          </a>
         </div>
       </article>
 
-      <article class="pcard">
-        <div class="pcard-img"><a href="https://ibb.co/3Yj2CzPj" target="_blank" rel="noopener"><img src="https://i.ibb.co/tPvgJX1v/Whats-App-Image-2025-11-27-at-11-37-58-PM-2.jpg" alt="Libro Números" loading="lazy"></a></div>
-        <div class="pcard-body">
-          <div class="pcard-top"><span class="pcard-chip green">Libro 02</span><span class="pcard-price">$25 c/envío</span></div>
-          <div class="pcard-title">Libro de estudio – Números</div>
-          <div class="pcard-desc">Actividades para aprender a reconocer y contar números. Ideal para nivel inicial y preescolar.</div>
-          <span class="pcard-tag">🔢 Matemática básica</span>
-        </div>
-      </article>
-
-      <article class="pcard">
-        <div class="pcard-img"><a href="https://ibb.co/nsRTTZYT" target="_blank" rel="noopener"><img src="https://i.ibb.co/jvHddBQd/Whats-App-Image-2025-11-27-at-11-37-58-PM-4.jpg" alt="Mi E-Book en español" loading="lazy"></a></div>
-        <div class="pcard-body">
-          <div class="pcard-top"><span class="pcard-chip green">Libro 03</span><span class="pcard-price">$25 c/envío</span></div>
-          <div class="pcard-title">Mi E-Book en español</div>
-          <div class="pcard-desc">Libro electrónico con historias, palabras y juegos en español. Fomenta la lectura temprana.</div>
-          <span class="pcard-tag">📖 Lectura temprana</span>
-        </div>
-      </article>
-
-      <article class="pcard">
-        <div class="pcard-img"><a href="https://ibb.co/nqX09b7c" target="_blank" rel="noopener"><img src="https://i.ibb.co/20z6xyvt/Whats-App-Image-2025-11-27-at-11-37-58-PM-3.jpg" alt="Libro Animales" loading="lazy"></a></div>
-        <div class="pcard-body">
-          <div class="pcard-top"><span class="pcard-chip green">Libro 04</span><span class="pcard-price">$25 c/envío</span></div>
-          <div class="pcard-title">Libro de estudio – Animales</div>
-          <div class="pcard-desc">Libro de páginas duras con ilustraciones de animales, preguntas y actividades para aprender jugando.</div>
-          <span class="pcard-tag">🦒 Naturaleza & exploración</span>
-        </div>
-      </article>
-
+      <div class="book-promo-block">
+        <div class="icon">🎉</div>
+        <strong>¡Promo 2 libros!</strong>
+        <p>Lleva 2 libros y paga solo <strong style="color:var(--blue);font-size:1.1rem">$33.99</strong> con envío incluido. ¡Ahorra más!</p>
+        <a class="btn-wa" style="margin-top:.4rem" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20la%20promo%20de%202%20libros%20de%20inglés%20por%20$33.99." target="_blank" rel="noopener">
+          <span class="wa-icon">💬</span><span class="wa-text">Quiero 2 libros para mi peque — $33.99<small>¡Con envío incluido para ti!</small></span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -680,135 +595,89 @@
 <!-- NOSOTROS -->
 <section id="nosotros">
   <div class="container">
-    <div class="reveal" style="margin-bottom:2rem;">
-      <div class="sec-label gold">✦ Por qué elegirnos</div>
-      <div class="sec-title">Importamos directo,<br>tú vendes más.</div>
-      <div class="sec-sub">Precios pensados para emprendedores, tiendas y vendedores online con márgenes reales.</div>
+    <div class="reveal" style="text-align:center;margin-bottom:2rem">
+      <div class="sec-eyebrow purple" style="margin:0 auto .65rem">💜 Por qué elegirnos</div>
+      <div class="sec-title">¡Comprar con nosotros es súper fácil!</div>
+      <div class="sec-sub" style="margin:0 auto">Queremos que regalarle a tu pequeño sea fácil, seguro y sin sorpresas. Aquí siempre te atendemos de verdad.</div>
     </div>
-    <div class="benefits stagger">
-      <div class="benefit">
-        <div class="benefit-num">01</div>
-        <h3>Importación propia</h3>
-        <p>Nos encargamos de toda la logística internacional para que tú solo te enfoques en vender.</p>
-      </div>
-      <div class="benefit">
-        <div class="benefit-num">02</div>
-        <h3>Precios para revender</h3>
-        <p>Estructura de precio ideal para emprendedores, tiendas físicas y venta por redes sociales.</p>
-      </div>
-      <div class="benefit">
-        <div class="benefit-num">03</div>
-        <h3>Envíos a todo Ecuador</h3>
-        <p>Trabajamos con operadores de confianza. Llegamos a tu ciudad con atención directa por WhatsApp.</p>
-      </div>
+    <div class="benefits-grid stagger">
+      <div class="benefit-card"><span class="benefit-icon">🏭</span><h3>Importación propia</h3><p>Directo desde origen — sin intermediarios — para que tengas el mejor precio del mercado.</p></div>
+      <div class="benefit-card"><span class="benefit-icon">📦</span><h3>Paga al recibir</h3><p>No arriesgas nada. Tu pedido llega y pagas en el momento de recibirlo. ¡Así de sencillo!</p></div>
+      <div class="benefit-card"><span class="benefit-icon">🚀</span><h3>Envíos a todo Ecuador</h3><p>Coordinamos el envío a tu ciudad con transportistas de confianza. Rápido y seguro.</p></div>
     </div>
   </div>
 </section>
 
 <!-- FINAL CTA -->
-<section>
-  <div class="container final-cta-wrap">
+<section style="padding-bottom:5rem">
+  <div class="container" style="margin-top:3.5rem">
     <div class="final-cta reveal">
-      <h2>¿Listo para empezar?</h2>
-      <p>Escríbenos por WhatsApp para recibir fotos, videos y el catálogo completo 2025–2026. Te ayudamos a armar tu pedido según tu ciudad y presupuesto.</p>
+      <div style="font-size:2rem;margin-bottom:.65rem">🎉🧸🚀</div>
+      <h2>¿Listo para ver la cara de tu niño al recibir su regalo?</h2>
+      <p>Cuéntanos la edad de tu pequeño o pequeña y te ayudamos a elegir el combo perfecto para él o ella. Fotos, videos y todo el catálogo al instante.</p>
       <div class="final-cta-btns">
-        <a class="btn-wacta" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20el%20combo%20de%205%20juguetes%20por%20$20." target="_blank" rel="noopener">
-          <span class="wa-icon">💬</span>
-          <span class="wa-text">Combo 5 juguetes — $20<small>Respuesta inmediata</small></span>
+        <a class="btn-wa" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20pedir%20el%20combo%20de%20niño%20en%20$45." target="_blank" rel="noopener">
+          <span class="wa-icon">👦</span><span class="wa-text">Combo para mi niño — $45<small>Respuesta inmediata</small></span>
         </a>
-        <a class="btn-wacta" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20la%20promo%20de%20libros%20educativos." target="_blank" rel="noopener">
-          <span class="wa-icon">📚</span>
-          <span class="wa-text">Promo libros 2×$33.99<small>Con envío incluido</small></span>
+        <a class="btn-wa" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20pedir%20el%20combo%20de%20niña%20en%20$40." target="_blank" rel="noopener">
+          <span class="wa-icon">👧</span><span class="wa-text">Combo para mi niña — $40<small>Respuesta inmediata</small></span>
         </a>
-        <a class="btn-wacta" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20ver%20el%20catálogo%20completo." target="_blank" rel="noopener">
-          <span class="wa-icon">📦</span>
-          <span class="wa-text">Ver catálogo completo<small>Fotos y videos disponibles</small></span>
+        <a class="btn-wa" href="https://wa.me/593968639583?text=Hola%20👋%20quiero%20pedir%20el%20Talking%20Poster%20bilingüe%20en%20$25." target="_blank" rel="noopener">
+          <span class="wa-icon">📣</span><span class="wa-text">Talking Poster — $25<small>Bilingüe Inglés &amp; Español</small></span>
         </a>
       </div>
     </div>
   </div>
 </section>
 
-</main>
-
-<div class="divider" style="margin-top:4rem;"></div>
+<div class="divider"></div>
 
 <footer>
   <div class="container footer-inner">
     <div class="footer-brand">Importaciones <span>Puma</span></div>
-    <p>© 2025–2026 · Juguetes & Libros Educativos · <a href="https://wa.me/593968639583" target="_blank" rel="noopener">+593 968 639 583</a></p>
+    <p>© 2025–2026 · Juguetes &amp; Libros Educativos · <a href="https://wa.me/593968639583" target="_blank" rel="noopener">+593 968 639 583</a></p>
   </div>
 </footer>
 
-<!-- SOCIAL PROOF TOAST -->
 <div id="sp-toast" role="status" aria-live="polite">
   <div class="sp-avatar" id="sp-avatar">P</div>
-  <div class="sp-body">
+  <div>
     <div class="sp-name" id="sp-name">Pedro G.</div>
-    <div class="sp-action" id="sp-action">compró el <b>Combo 5 juguetes</b> en Ambato</div>
-    <div class="sp-time" id="sp-time">Hace 2 minutos</div>
+    <div class="sp-action" id="sp-action">compró el <b>Combo Niño</b> en Ambato</div>
+    <div class="sp-time" id="sp-time">⏱ Hace 2 minutos</div>
   </div>
 </div>
 
 <script>
-  /* ── Scroll reveal ── */
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
-  }, { threshold: 0.08 });
-  document.querySelectorAll('.reveal, .stagger').forEach(el => io.observe(el));
+  // Confetti
+  const cc=document.getElementById('confetti');
+  const cols=['#ff4d6d','#fbbf24','#22c55e','#3d9cf5','#a855f7','#f472b6','#f97316'];
+  for(let i=0;i<16;i++){const p=document.createElement('div');p.className='confetti-piece';p.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*60-10}%;background:${cols[i%cols.length]};width:${6+Math.random()*8}px;height:${6+Math.random()*8}px;border-radius:${Math.random()>.5?'50%':'2px'};animation-duration:${3+Math.random()*5}s;animation-delay:${Math.random()*4}s`;cc.appendChild(p)}
 
-  /* ── Social Proof Toasts ── */
-  const spData = [
-    { name: 'Pedro G.',    initial: 'P', action: 'compró el <b>Combo 5 juguetes</b>',           city: 'Ambato',      time: 'Hace 3 min' },
-    { name: 'Juana M.',    initial: 'J', action: 'separó el <b>Combo navideño</b>',              city: 'Quito',       time: 'Hace 1 min' },
-    { name: 'Carlos R.',   initial: 'C', action: 'pidió el <b>Y-Book interactivo</b>',           city: 'Guayaquil',   time: 'Hace 5 min' },
-    { name: 'Sofía T.',    initial: 'S', action: 'compró <b>2 libros educativos</b>',            city: 'Cuenca',      time: 'Hace 2 min' },
-    { name: 'Andrés P.',   initial: 'A', action: 'pidió el <b>Robot interactivo</b>',            city: 'Loja',        time: 'Hace 4 min' },
-    { name: 'María L.',    initial: 'M', action: 'separó el <b>Combo 5 juguetes — $20</b>',     city: 'Riobamba',    time: 'Hace 1 min' },
-    { name: 'Luis F.',     initial: 'L', action: 'compró la <b>Pizarra LCD 10"</b>',            city: 'Portoviejo',  time: 'Hace 6 min' },
-    { name: 'Diana C.',    initial: 'D', action: 'pidió el <b>Cajero automático</b> de juguete',city: 'Manta',       time: 'Hace 2 min' },
-    { name: 'Roberto V.',  initial: 'R', action: 'compró el <b>Y-Book + Libro Animales</b>',    city: 'Ibarra',      time: 'Hace 3 min' },
-    { name: 'Valeria N.',  initial: 'V', action: 'separó <b>3 combos</b> para su tienda',       city: 'Esmeraldas',  time: 'Hace 1 min' },
-    { name: 'Marco A.',    initial: 'M', action: 'compró el <b>Helicóptero USB</b>',            city: 'Machala',     time: 'Hace 5 min' },
-    { name: 'Patricia E.', initial: 'P', action: 'pidió el <b>Libro de Números</b>',            city: 'Santo Domingo', time: 'Hace 2 min'},
-    { name: 'Kevin O.',    initial: 'K', action: 'compró <b>el combo completo</b>',             city: 'Latacunga',   time: 'Hace 4 min' },
-    { name: 'Gabriela S.', initial: 'G', action: 'separó el <b>Teléfono educativo</b>',         city: 'Ambato',      time: 'Hace 1 min' },
+  // Scroll reveal
+  const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}})},{threshold:.07});
+  document.querySelectorAll('.reveal,.stagger').forEach(el=>io.observe(el));
+
+  // Toast
+  const spData=[
+    {name:'Pedro G.',  ini:'P',action:'compró el <b>Combo Niño</b>',          city:'Ambato',    time:'Hace 3 min'},
+    {name:'Juana M.',  ini:'J',action:'pidió el <b>Combo Niña</b>',            city:'Quito',     time:'Hace 1 min'},
+    {name:'Carlos R.', ini:'C',action:'compró el <b>Talking Poster</b>',       city:'Guayaquil', time:'Hace 5 min'},
+    {name:'Sofía T.',  ini:'S',action:'pidió el <b>Y-Book de Inglés</b>',      city:'Cuenca',    time:'Hace 2 min'},
+    {name:'Andrés P.', ini:'A',action:'compró el <b>Combo Niño</b>',           city:'Loja',      time:'Hace 4 min'},
+    {name:'María L.',  ini:'M',action:'pidió el <b>Combo Niña — $40</b>',      city:'Riobamba',  time:'Hace 1 min'},
+    {name:'Diana C.',  ini:'D',action:'compró el <b>Talking Poster</b>',       city:'Manta',     time:'Hace 2 min'},
+    {name:'Roberto V.',ini:'R',action:'pidió <b>2 Combos Niño</b>',            city:'Ibarra',    time:'Hace 3 min'},
+    {name:'Valeria N.',ini:'V',action:'separó el <b>Combo Niña</b>',           city:'Esmeraldas',time:'Hace 1 min'},
+    {name:'Kevin O.',  ini:'K',action:'compró <b>Combo + Talking Poster</b>',  city:'Latacunga', time:'Hace 4 min'},
   ];
-
-  const avatarColors = ['#ff5c35','#f5c842','#2ecc71','#3b82f6','#a855f7','#ec4899','#f97316'];
-  const toast   = document.getElementById('sp-toast');
-  const elName  = document.getElementById('sp-name');
-  const elAct   = document.getElementById('sp-action');
-  const elTime  = document.getElementById('sp-time');
-  const elAv    = document.getElementById('sp-avatar');
-
-  let idx = 0;
-  // Varying delays: first show after 4s, then alternate 7s / 3s / 9s / 2s pattern
-  const delays = [4000, 7000, 3000, 9000, 2000, 8000, 4000, 6000, 3000, 10000, 2000, 7000, 5000, 3000];
-
-  function showToast() {
-    const d = spData[idx % spData.length];
-    const color = avatarColors[idx % avatarColors.length];
-    elAv.textContent = d.initial;
-    elAv.style.background = `linear-gradient(135deg, ${color}, ${color}aa)`;
-    elName.textContent = d.name;
-    elAct.innerHTML = d.action + ` en <b style="color:var(--text)">${d.city}</b>`;
-    elTime.textContent = d.time;
-
-    toast.classList.add('show');
-
-    // Hide after 4s
-    setTimeout(() => {
-      toast.classList.remove('show');
-      idx++;
-      const nextDelay = delays[idx % delays.length];
-      setTimeout(showToast, nextDelay);
-    }, 4200);
-  }
-
-  // Kick off
-  setTimeout(showToast, delays[0]);
+  const avc=['#ff4d6d','#fbbf24','#22c55e','#3d9cf5','#a855f7','#f97316','#f472b6'];
+  const toast=document.getElementById('sp-toast');
+  const elN=document.getElementById('sp-name'),elA=document.getElementById('sp-action'),elT=document.getElementById('sp-time'),elAv=document.getElementById('sp-avatar');
+  const delays=[4000,7000,3000,9000,2000,8000,4000,6000,3000,10000];
+  let idx=0;
+  function showToast(){const d=spData[idx%spData.length],c=avc[idx%avc.length];elAv.textContent=d.ini;elAv.style.background=`linear-gradient(135deg,${c},${c}aa)`;elN.textContent=d.name;elA.innerHTML=d.action+` en <b style="color:var(--text)">${d.city}</b>`;elT.textContent='⏱ '+d.time;toast.classList.add('show');setTimeout(()=>{toast.classList.remove('show');idx++;setTimeout(showToast,delays[idx%delays.length])},4200)}
+  setTimeout(showToast,delays[0]);
 </script>
-
 </body>
 </html>
